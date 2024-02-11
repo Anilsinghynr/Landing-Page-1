@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+/* This much code is compulsory for the page to work the way you want to work them*/
+
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.left{
+    width: 40%;
+    height: 100%;
+    background: white;
+    position: relative;
+}
+
+.right{
+    width: 60%;
+    height: 100%;
+}
+
+.rtop{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.rbottom{
+    width: 100%;
+    height: 50%;
+    background-image: url(https://images.unsplash.com/photo-1619241638225-14d56e47ae64?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+
+.rtopleft{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+.rtopright{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1494253109108-2e30c049369b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position:bottom;
+    background-size:cover;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.twitter{
+    color: royalblue;
+}
+
+.navright{
+    display: flex;
+    align-items: center;
+}
+
+.navright a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    margin-right: 40px;
+}
+
+.heading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.heading h1{
+    font-size: 90px;
+    margin-bottom: 20px;
+}
+
+.heading p{
+    font-size: 1rem;
+    line-height: 25px;
+    color: black;
+    opacity: 0.6;
+    margin-bottom: 20px;
+}
+
+.heading a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 1rem;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+
+.navright a:hover{
+    /* padding-bottom: 5px; */
+    border-bottom: 2px solid black;
+    opacity: 0.8;
+}
+
+.navright i{
+    font-size: large;
+    transition:all 0.3s ease-in-out;
+}
+
+.navright i:hover{
+    font-size:x-large;
+    cursor: pointer;
+}
+
+@media screen and (max-width:500px) {
+    .main{
+        flex-direction: column;
+    }
+
+    .left{
+        width: 100%;
+    }
+
+    .right{
+        width: 100%;
+    }
+
+    .heading{
+        text-align: center;
+    }
+
+}
